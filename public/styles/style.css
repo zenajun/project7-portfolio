@@ -131,9 +131,23 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  font-size: 62.5%; }
+
 .container {
   max-width: 900px;
   margin: 0 auto; }
 
 body {
-  background: cornflowerblue; }
+  background: url("public/assets/colin-czerwinski-577547-unsplash.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+h1 {
+  text-align: center; }
+
+h2 {
+  text-decoration: none; }
+
+span {
+  text-decoration: underline;
+  font-family: "Poppins", sans-serif; }
