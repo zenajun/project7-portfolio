@@ -1,0 +1,12 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  @include fontSize(16);
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
