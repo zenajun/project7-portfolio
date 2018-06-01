@@ -28,12 +28,13 @@ section h2 {
     flex-wrap: wrap;
     justify-content: space-between;
     &__item {
-      width: 20%;
-      &--icon{
+      &__icon{
         @include fontSize(60);
-      }
-      &--text {
-        @include fontSize(20);        
+        width: 20%;
+        &--para {
+          @include fontSize(20);  
+          margin-top: 0;      
+        }
       }
     }
   }

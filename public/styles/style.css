@@ -138,10 +138,11 @@ body {
   font-size: 16px;
   font-size: 1.6rem; }
 
-.wrapper {
-  width: 80%;
-  max-width: 1170px;
-  margin: 0 auto; }
+@media (min-width: 1040px) {
+  .wrapper {
+    width: 80%;
+    max-width: 1170px;
+    margin: 0 auto; } }
 
 .header {
   height: 100vh; }
@@ -149,32 +150,34 @@ body {
     font-size: 20px;
     font-size: 2rem;
     font-family: "Playfair Display", serif;
+    padding-left: 20px;
+    width: 100%;
+    background: white;
+    overflow: hidden;
     -webkit-box-shadow: inset 0 -10px 10px -10px #a1a1a1;
             box-shadow: inset 0 -10px 10px -10px #a1a1a1; }
     .header__nav__list {
       list-style: none;
       margin: 0;
-      padding: 25px 0 0; }
+      padding: 25px 0 0;
+      display: none; }
       @media (min-width: 640px) {
         .header__nav__list {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; } }
-      .header__nav__list__item {
-        padding: 10px 0; }
-        .header__nav__list__item:hover {
-          background: #1b1b1b; }
-        .header__nav__list__item__link {
-          text-decoration: none;
-          color: black;
-          display: block; }
-          .header__nav__list__item__link:hover {
-            color: white; }
+      .header__nav__list__item__link {
+        padding: 10px 0;
+        text-decoration: none;
+        color: black;
+        display: block; }
+        .header__nav__list__item__link:hover {
+          background: #1b1b1b;
+          color: white; }
   .header__hero {
     background: url(../../public/assets/isaac-benhesed-249427-unsplash.jpg) center center;
     background-position: center bottom;
     background-size: cover;
-    height: 90vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -197,7 +200,15 @@ body {
       font-family: "Poppins", sans-serif; }
 
 .toggle {
-  width: 100%; }
+  width: 100%;
+  padding-top: 20px;
+  font-size: 40px; }
+  @media (min-width: 640px) {
+    .toggle {
+      display: none; } }
+
+.active {
+  display: block; }
 
 section h2 {
   font-size: 40px;
@@ -230,11 +241,11 @@ section h2 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    .skills__list__item {
+    .skills__list__item__icon {
+      font-size: 60px;
+      font-size: 6rem;
       width: 20%; }
-      .skills__list__item--icon {
-        font-size: 60px;
-        font-size: 6rem; }
-      .skills__list__item--text {
+      .skills__list__item__icon--para {
         font-size: 20px;
-        font-size: 2rem; }
+        font-size: 2rem;
+        margin-top: 0; }

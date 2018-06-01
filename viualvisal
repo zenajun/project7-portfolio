@@ -1,0 +1,35 @@
+[33mcommit 15f5452b3e0a314471d4ce78b3955986a5eceb73[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Zena Jun <zena.jun@gmail.com>
+Date:   Thu May 31 17:15:14 2018 -0400
+
+    Adding markup/Base structure
+
+[33mcommit fc8108fef5e0010eb3d50276d5e83d3c933eccaf[m
+Author: Zena Jun <zena.jun@gmail.com>
+Date:   Thu May 31 11:57:29 2018 -0400
+
+    setting up sass files and construction page
+
+[33mcommit 9712f4db976056e2640705a391c77e8b18e43871[m
+Author: Zena Jun <zena.jun@gmail.com>
+Date:   Wed May 30 14:44:25 2018 -0400
+
+    Initial commit
+
+[33mcommit 84ba7823c582d88a006a8d733692ed9fdd721caf[m
+Author: zenajun <34603017+zenajun@users.noreply.github.com>
+Date:   Tue Feb 27 18:43:33 2018 -0500
+
+    Delete .DS_Store
+
+[33mcommit a4797bb4bf65ded228f8f3697a598ca0974a0b51[m
+Author: zenajun <zena.jun@gmail.com>
+Date:   Tue Feb 20 20:35:49 2018 -0500
+
+    initial commit
+
+[33mcommit e3749ae5fcea73b07beee558ee13942d249d07f7[m
+Author: zenajun <zena.jun@gmail.com>
+Date:   Tue Feb 20 20:31:55 2018 -0500
+
+    initial commit

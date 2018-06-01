@@ -3,7 +3,7 @@
 <head>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif|Playfair+Display:400,700|Poppins:400,500">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 	<link rel="stylesheet" href="public/styles/style.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
 	<header class="header">
 		<nav class="header__nav" id="headerNav">
 			<div class="wrapper">
-				<div href="javascript:void(0)" onclick="hamburger()" class="toggle"><i class="fas fa-bars"></i></div>
+				<div class="toggle"><i class="fas fa-bars menu"></i></div>
 				<ul class="header__nav__list">
 					<li class="header__nav__list__item"><a href="#home" class="header__nav__list__item__link">Home</a></li>
 					<li class="header__nav__list__item"><a href="#about" class="header__nav__list__item__link">About me</a></li>
@@ -23,7 +23,7 @@
 				</ul>
 			</div>			
 		</nav>
-		<div class="header__hero">
+		<div class="header__hero" id="home">
 			<div class="wrapper">
 				<h1 class="header__hero__header1">Zena Jun</h1>
 				<h2 class="header__hero__header2">Web Developer<br/> based in Toronto</h2>
@@ -32,7 +32,7 @@
 	</header>
  <main>
 	 <!-- About me -->
-	<section class="about">
+	<section class="about" id="about">
 		<div class="wrapper">
 			<h2>About me</h2>
 			<img src="../public/assets/profile.jpg" alt="Zena Jun" class="about__image">
@@ -41,52 +41,60 @@
 	</section>
 	 
 	 <!-- Skills -->
-	 <section class="skills">
+	 <section class="skills" id="skills">
 		 <div class="wrapper">
 			 <h2>Skills</h2>
-			 <ul class="skills__list">
-				<li class="skills__list__item--icon">
-					<i class="devicon-javascript-plain"></i>
-				</li>
-				<li class="skills__list__item--icon">
-					<i class="devicon-jquery-plain-wordmark"></i>
-				</li>
-
-<li class="skills__list__item--icon">
-	<i class="devicon-react-original-wordmark"></i>
-</li>
-<li class="skills__list__item--icon">
-	<i class="devicon-html5-plain-wordmark"></i>
-</li>
-<li class="skills__list__item--icon">
-	<i class="devicon-css3-plain-wordmark"></i>
-</li>
-<li class="skills__list__item--icon">
-	<i class="devicon-sass-original"></i>
-</li>
-<li class="skills__list__item--icon">
-	<i class="devicon-gulp-plain"></i>
-</li>
-<li class="skills__list__item--icon">
-	<i class="devicon-git-plain-wordmark"></i>
-</li>
-<li class="skills__list__item--icon">
-	<i class="devicon-github-plain-wordmark"></i>
-</li>
-<li class="skills__list__item--icon">
-<i class="devicon-visualstudio-plain"></i>
-
-</li>
-				 <li class="skills__list__item--text">API</li>
-				 <li class="skills__list__item--text">Responsive Design</li>
-				 <li class="skills__list__item--text">ES6</li>
-				 <li class="skills__list__item--text">Accessibility</li>
-				 <li class="skills__list__item--text">Firebase</li>
-				</ul>
+				<ul class="skills__list">
+					<li class="skills__list__item__icon">
+						<i class="devicon-javascript-plain"></i>
+						<p class="skills__list__item__icon--para">JavaScript</p>
+					</li>
+					<li class="skills__list__item__icon">
+						<i class="devicon-jquery-plain-wordmark"></i>
+						<p class="skills__list__item__icon--para">jQuery</p>
+					</li>
+					<li class="skills__list__item__icon">
+						<i class="devicon-react-original-wordmark"></i>
+						<p class="skills__list__item__icon--para">React</p>
+					</li>
+					<li class="skills__list__item__icon">
+						<i class="devicon-html5-plain-wordmark"></i>
+						<p class="skills__list__item__icon--para">HTML5</p>
+					</li>
+					<li class="skills__list__item__icon">
+						<i class="devicon-css3-plain-wordmark"></i>
+						<p class="skills__list__item__icon--para">CSS3</p>
+					</li>
+					<li class="skills__list__item__icon">
+						<i class="devicon-sass-original"></i>
+						<p class="skills__list__item__icon--para">SASS</p>
+					</li>
+					<li class="skills__list__item__icon">
+						<i class="devicon-gulp-plain"></i>
+						<p class="skills__list__item__icon--para">Gulp</p>
+					</li>
+					<li class="skills__list__item__icon">
+						<i class="devicon-git-plain-wordmark"></i>
+						<p class="skills__list__item__icon--para">Git</p>
+					</li>
+					<li class="skills__list__item__icon">
+						<i class="devicon-github-plain-wordmark"></i>
+						<p class="skills__list__item__icon--para">Github</p>
+					</li>
+					<li class="skills__list__item__icon">
+						<i class="devicon-visualstudio-plain"></i>
+						<p class="skills__list__item__icon--para">Visual Studio</p>
+					</li>
+					<li class="skills__list__item--text">API</li>				
+					<li class="skills__list__item--text">Responsive Design</li>
+					<li class="skills__list__item--text">ES6</li>
+					<li class="skills__list__item--text">Accessibility</li>
+					<li class="skills__list__item--text">Firebase</li>
+</ul>
 			</div>
 	 </section>
 	 <!-- Portfolio -->
-	 <section>
+	 <section class="portfolio" id="portfolio">
 		 <div class="wrapper">
 			 <h2>Portfolio</h2>
 			 <h3>React</h3>
@@ -97,7 +105,7 @@
 		</section>
 		
 		<!-- Contact -->
-	  <section>
+	  <section class="contact" id="contact">
 		 <div class="wrapper">
 			 <h2>Contact</h2>	 
 <form action="http://www.focuspocus.io/magic/96cf0e5153fe6c8775d3df3c52662d78" method="POST" enctype="multipart/form-data">
@@ -127,7 +135,7 @@
 			<p>&copy; Zena 2018</p>
 		</div>
   </footer>
-
+	<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
 	<script src="public/scripts/main.js"></script>
 </body>
 </html>

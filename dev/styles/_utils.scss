@@ -1,10 +1,7 @@
-$pink: #d81b60;
-$grey: #aeb1b9;
-$black: #000f20;
-$white: #ffffff;
-
-
-
+$primaryColor: #d81b60;
+$secondaryColor: #aeb1b9;
+$primaryAccentColor: #000f20;
+$secondaryAccentColor: #ffffff;
 
 @mixin colors($background, $color) {
   background: $background;

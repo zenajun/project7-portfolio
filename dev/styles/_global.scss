@@ -7,7 +7,9 @@ body {
 }
 
 .wrapper {
-  width: 80%;
-  max-width: 1170px;
-  margin: 0 auto;
+    @media (min-width: 1040px) {
+    width: 80%;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
 }
