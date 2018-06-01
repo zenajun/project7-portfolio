@@ -1,7 +1,20 @@
-const ohHey = "Hello World";
+// function myFunction() {
+//   var x = document.getElementById("myTopnav");
+//   if (x.className === "topnav") {
+//     x.className += " responsive";
+//   } else {
+//     x.className = "topnav";
+//   }
+// }
 
-console.log(ohHey);
+const hamburger = () => {
+  const nav = document.getElementById('headerNav');
+  console.log('hamburger clicked');
+  
+  // if (nav.className === '') {
+  //   nav.className += ' responsive';
+  // } else {
+  //   nav.className = '';
+  // }
 
-
-
-console.log(`hello`);
+}

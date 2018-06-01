@@ -3,74 +3,130 @@
 <head>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif|Playfair+Display:400,700|Poppins:400,500">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="public/styles/style.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>My Project</title>
+	<title>Zena</title>
 </head>
 <body>
- <header>
-	  <nav>
-			<ul>
-				<li><a href="#home">Home</a></li>
-				<li><a href="#about">About me</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#contact">Contact me</a></li>
-			</ul>
-	  </nav>
-	 <h1>Zena Jun</h1>
-	 <h2>Web Developer based in Toronto</h2>
-	 
- </header>
+	<header class="header">
+		<nav class="header__nav" id="headerNav">
+			<div class="wrapper">
+				<div href="javascript:void(0)" onclick="hamburger()" class="toggle"><i class="fas fa-bars"></i></div>
+				<ul class="header__nav__list">
+					<li class="header__nav__list__item"><a href="#home" class="header__nav__list__item__link">Home</a></li>
+					<li class="header__nav__list__item"><a href="#about" class="header__nav__list__item__link">About me</a></li>
+					<li class="header__nav__list__item"><a href="#skills" class="header__nav__list__item__link">Skills</a></li>
+					<li class="header__nav__list__item"><a href="#contact" class="header__nav__list__item__link">Contact me</a></li>
+				</ul>
+			</div>			
+		</nav>
+		<div class="header__hero">
+			<div class="wrapper">
+				<h1 class="header__hero__header1">Zena Jun</h1>
+				<h2 class="header__hero__header2">Web Developer<br/> based in Toronto</h2>
+			</div>
+		</div>			
+	</header>
  <main>
 	 <!-- About me -->
 	<section class="about">
-		<h2>About me</h2>
-		<img src="../public/assets/profile.jpg" alt="Zena Jun">
-		<h3>Zena</h3>
-		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, temporibus distinctio facilis placeat excepturi totam non quos itaque maiores ab. Quod ab vitae sunt eos dignissimos eligendi tempore odit quo.</p>
-	
-	 </section>
+		<div class="wrapper">
+			<h2>About me</h2>
+			<img src="../public/assets/profile.jpg" alt="Zena Jun" class="about__image">
+			<p class="about__para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, temporibus distinctio facilis placeat excepturi totam non quos itaque maiores ab. Quod ab vitae sunt eos dignissimos eligendi tempore odit quo.</p>
+		</div>			
+	</section>
 	 
 	 <!-- Skills -->
-	 <section>
-		 <h2>Skills</h2>
-		<ul>
-			<li>skill</li>
-			<li>skill</li>
-			<li>skill</li>
-			<li>skill</li>
-			<li>skill</li>
-			<li>skill</li>
-			<li>skill</li>
-			<li>skill</li>
-			<li>skill</li>
-			<li>skill</li>
-			<li>skill</li>
-			<li>skill</li>
-			<li>skill</li>
-			<li>skill</li>
-			<li>skill</li>
-		</ul>
+	 <section class="skills">
+		 <div class="wrapper">
+			 <h2>Skills</h2>
+			 <ul class="skills__list">
+				<li class="skills__list__item--icon">
+					<i class="devicon-javascript-plain"></i>
+				</li>
+				<li class="skills__list__item--icon">
+					<i class="devicon-jquery-plain-wordmark"></i>
+				</li>
 
+<li class="skills__list__item--icon">
+	<i class="devicon-react-original-wordmark"></i>
+</li>
+<li class="skills__list__item--icon">
+	<i class="devicon-html5-plain-wordmark"></i>
+</li>
+<li class="skills__list__item--icon">
+	<i class="devicon-css3-plain-wordmark"></i>
+</li>
+<li class="skills__list__item--icon">
+	<i class="devicon-sass-original"></i>
+</li>
+<li class="skills__list__item--icon">
+	<i class="devicon-gulp-plain"></i>
+</li>
+<li class="skills__list__item--icon">
+	<i class="devicon-git-plain-wordmark"></i>
+</li>
+<li class="skills__list__item--icon">
+	<i class="devicon-github-plain-wordmark"></i>
+</li>
+<li class="skills__list__item--icon">
+<i class="devicon-visualstudio-plain"></i>
+
+</li>
+				 <li class="skills__list__item--text">API</li>
+				 <li class="skills__list__item--text">Responsive Design</li>
+				 <li class="skills__list__item--text">ES6</li>
+				 <li class="skills__list__item--text">Accessibility</li>
+				 <li class="skills__list__item--text">Firebase</li>
+				</ul>
+			</div>
 	 </section>
 	 <!-- Portfolio -->
 	 <section>
-		 <h2>Portfolio</h2>
-		 <h3>React</h3>
-		 <h3>jQuery + API</h3>
-		 <h3>jQuery game</h3>
-		 <h3>Responsive PSD conversion</h3>
-	 </section>
-	 <!-- Contact -->
-	 <section>
-		 <h2>Contact</h2>	 
-  </section>
- </main>
- <footer>
-   <p>&copy; Zena 2018</p>
- </footer>
+		 <div class="wrapper">
+			 <h2>Portfolio</h2>
+			 <h3>React</h3>
+			 <h3>jQuery + API</h3>
+			 <h3>jQuery game</h3>
+			 <h3>Responsive PSD conversion</h3>
+			</div>
+		</section>
+		
+		<!-- Contact -->
+	  <section>
+		 <div class="wrapper">
+			 <h2>Contact</h2>	 
+<form action="http://www.focuspocus.io/magic/96cf0e5153fe6c8775d3df3c52662d78" method="POST" enctype="multipart/form-data">
+				 <label for="email">Email</label>
+				 <input type="email" name="email" id="email">
+				 <label for="subject">Subject</label>
+				 <input type="text" id="subject" name="subject">
+				 <label for="message"></label>
+				 <textarea name="message" id="message" placeholder="Your message"></textarea>
+				 <input type="submit" value="Send Now">
+				</form>
+				<nav>
+					<ul>
+						<li><a href="#">GitHub</a></li>
+						<li><a href="#">LinkedIn</a></li>
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">CodePen</a></li>
+						<li><a href="#">Medium</a></li>
+						<li><a href="#">Instagram</a></li>
+					</ul>
+			</nav>
+			</div>
+  	</section>
+  </main>
+  <footer>
+		<div class="wrapper">
+			<p>&copy; Zena 2018</p>
+		</div>
+  </footer>
 
 	<script src="public/scripts/main.js"></script>
 </body>
