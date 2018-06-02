@@ -1,20 +1,28 @@
 'use strict';
 
-$(function () {
-  // Hamburger menu
+var app = {};
+
+app.hamburger = function () {
   $('.menu').click(function () {
     $('ul').toggleClass('active');
-    header();
-  }); // Hamburger menu end viewport height
+    app.header();
+  });
+};
 
-  var header = function header() {
-    var $navHeight = $('.header__nav').height();
-    var $windowHeight = $(window).height();
-    var $heroHeight = Math.floor(100 - 100 * $navHeight / $windowHeight);
+app.header = function () {
+  var $navHeight = $('.header__nav').height();
+  var $windowHeight = $(window).height();
+  var $heroHeight = Math.floor(100 - 100 * $navHeight / $windowHeight);
 
-    $('.header__hero').css({
-      'height': $heroHeight + 'vh'
-    });
-  };
-  header();
+  $('.header__hero').css({
+    'height': $heroHeight + 'vh'
+  });
+};
+app.init = function () {
+  app.hamburger();
+  app.header();
+};
+
+$(function () {
+  app.init();
 });

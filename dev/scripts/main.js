@@ -1,18 +1,26 @@
-$(function() {
-  // Hamburger menu
+const app = {};
+
+app.hamburger = () => {
   $('.menu').click(() => {
     $('ul').toggleClass('active');  
-    header();  
-  });  // Hamburger menu end viewport height
+    app.header();  
+  });
+}
 
-  const header = () => {
-    const $navHeight = $('.header__nav').height();
-    const $windowHeight = $(window).height();
-    const $heroHeight = Math.floor(100 - ((100 * $navHeight) / $windowHeight));
- 
-    $('.header__hero').css({
-      'height': $heroHeight + 'vh'
-    });
-  }
-  header();
+app.header = () => {
+  const $navHeight = $('.header__nav').height();
+  const $windowHeight = $(window).height();
+  const $heroHeight = Math.floor(100 - ((100 * $navHeight) / $windowHeight));
+
+  $('.header__hero').css({
+    'height': $heroHeight + 'vh'
+  });
+}
+app.init = () => {
+  app.hamburger();
+  app.header();
+}
+
+$(function() {
+  app.init();
 });
