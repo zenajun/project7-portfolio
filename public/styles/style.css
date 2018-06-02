@@ -144,60 +144,59 @@ body {
     max-width: 1170px;
     margin: 0 auto; } }
 
-.header {
-  height: 100vh; }
-  .header__nav {
+.header__nav {
+  font-size: 20px;
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  padding-left: 20px;
+  width: 100%;
+  background: white;
+  overflow: hidden;
+  -webkit-box-shadow: inset 0 -10px 10px -10px #a1a1a1;
+          box-shadow: inset 0 -10px 10px -10px #a1a1a1; }
+  .header__nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 25px 0 0;
+    display: none; }
+    @media (min-width: 640px) {
+      .header__nav__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
+    .header__nav__list__item__link {
+      padding: 10px 0;
+      text-decoration: none;
+      color: black;
+      display: block; }
+      .header__nav__list__item__link:hover {
+        background: #1b1b1b;
+        color: white; }
+
+.header__hero {
+  background: url(../../public/assets/isaac-benhesed-249427-unsplash.jpg) center center;
+  background-position: center bottom;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .header__hero__header1 {
+    font-size: 60px;
+    font-size: 6rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    letter-spacing: 1px; }
+  .header__hero__header2 {
     font-size: 20px;
     font-size: 2rem;
-    font-family: "Playfair Display", serif;
-    padding-left: 20px;
-    width: 100%;
-    background: white;
-    overflow: hidden;
-    -webkit-box-shadow: inset 0 -10px 10px -10px #a1a1a1;
-            box-shadow: inset 0 -10px 10px -10px #a1a1a1; }
-    .header__nav__list {
-      list-style: none;
-      margin: 0;
-      padding: 25px 0 0;
-      display: none; }
-      @media (min-width: 640px) {
-        .header__nav__list {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex; } }
-      .header__nav__list__item__link {
-        padding: 10px 0;
-        text-decoration: none;
-        color: black;
-        display: block; }
-        .header__nav__list__item__link:hover {
-          background: #1b1b1b;
-          color: white; }
-  .header__hero {
-    background: url(../../public/assets/isaac-benhesed-249427-unsplash.jpg) center center;
-    background-position: center bottom;
-    background-size: cover;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .header__hero__header1 {
-      font-size: 60px;
-      font-size: 6rem;
-      font-family: "Playfair Display", serif;
-      font-weight: 700;
-      letter-spacing: 1px; }
-    .header__hero__header2 {
-      font-size: 20px;
-      font-size: 2rem;
-      font-family: "Poppins", sans-serif; }
+    font-family: "Poppins", sans-serif; }
 
 .toggle {
   width: 100%;
