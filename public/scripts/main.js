@@ -9,6 +9,13 @@ app.hamburger = function () {
   });
 };
 
+app.closeHamburger = function () {
+  $('.header__nav__list__item__link').click(function () {
+    $('ul').toggleClass('active');
+    app.header();
+  });
+};
+
 app.header = function () {
   var $navHeight = $('.header__nav').height();
   var $windowHeight = $(window).height();
@@ -20,6 +27,7 @@ app.header = function () {
 };
 app.init = function () {
   app.hamburger();
+  app.closeHamburger();
   app.header();
 };
 

@@ -7,6 +7,13 @@ app.hamburger = () => {
   });
 }
 
+app.closeHamburger = () => {
+  $('.header__nav__list__item__link').click(() => {
+    $('ul').toggleClass('active');
+    app.header();
+  });
+}
+
 app.header = () => {
   const $navHeight = $('.header__nav').height();
   const $windowHeight = $(window).height();
@@ -18,6 +25,7 @@ app.header = () => {
 }
 app.init = () => {
   app.hamburger();
+  app.closeHamburger();
   app.header();
 }
 
