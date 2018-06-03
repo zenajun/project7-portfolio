@@ -2,7 +2,6 @@
   &__nav {
     @include fontSize(20);
     @include fontFamily($primaryFont);
-    padding-left: 20px;
     width: 100%;
     background: white;
     overflow: hidden;
@@ -10,12 +9,14 @@
     &__list {
       list-style: none;
       margin: 0;
-      padding: 25px 0 0;
+      padding: 0;
       display: none;
       @media (min-width: 640px) {
         display: flex;
+        padding: 15px 0;
       }      
       &__item {  
+        padding-right: 25px;
         &__link {
           padding: 10px 0; 
           text-decoration: none;
@@ -51,7 +52,7 @@
 
 .toggle {
   width: 100%;
-  padding-top: 20px;
+  padding: 15px 0;
   font-size: 40px;
   @media (min-width: 640px) {
     display: none;    

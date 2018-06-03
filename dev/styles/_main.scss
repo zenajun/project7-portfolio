@@ -1,7 +1,18 @@
+// Global section styles
+// About me
+// Skills
+// Portfolio
+// Contact e
 
+section {
+  padding: 100px 0;
+}
 section h2 {
     @include fontSize(40);
     @include fontFamily($primaryFont);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
   }
 
 .about {
@@ -9,31 +20,77 @@ section h2 {
   &__para {
     @include fontSize(18);
     @include fontFamily($secondaryFont);
+    line-height: 1.6;
   }
   &__image {
     width: 60%;
     max-width: 430px;
     border-radius: 50%;
-    display: block;    
+    display: block; 
+    margin: 0 auto;   
   }
 }
 
 .skills {
-  height: 100vh;
+  height: 50vh;
+  background: $primaryColor;
   &__list {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     &__item {
+      border: 1px solid red;
+      text-align: center;
       &__icon{
         @include fontSize(60);
-        width: 20%;
+        margin: 0 auto;
         &--para {
           @include fontSize(20);  
           margin-top: 0;      
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+i {
+  border: 1px solid black;
+  margin: 0 auto;
+
+}
+
+.portfolio {
+  &__image {
+    max-width: 100%;
+  }
+}
+
+.contact {
+  .contact-form { 
+    input, textarea {
+      display: block;
+      border: none;
+      width: 80%;
+      border-bottom: 2px solid grey;
+    }    
+  }
+}
+
+.social-media {
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    &__item {
+      @include fontSize(40);
+      &__link {
+        color: $secondaryColor;
+        transition: 0.2s;
+        &:hover {
+          color: $accentColor;
         }
       }
     }

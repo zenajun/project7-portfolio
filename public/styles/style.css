@@ -131,6 +131,19 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden; }
+
 html {
   font-size: 62.5%; }
 
@@ -138,17 +151,18 @@ body {
   font-size: 16px;
   font-size: 1.6rem; }
 
-@media (min-width: 1040px) {
-  .wrapper {
-    width: 80%;
-    max-width: 1170px;
-    margin: 0 auto; } }
+.wrapper {
+  margin: 0 15px; }
+  @media (min-width: 1040px) {
+    .wrapper {
+      width: 80%;
+      max-width: 1170px;
+      margin: 0 auto; } }
 
 .header__nav {
   font-size: 20px;
   font-size: 2rem;
   font-family: "Playfair Display", serif;
-  padding-left: 20px;
   width: 100%;
   background: white;
   overflow: hidden;
@@ -157,21 +171,24 @@ body {
   .header__nav__list {
     list-style: none;
     margin: 0;
-    padding: 25px 0 0;
+    padding: 0;
     display: none; }
     @media (min-width: 640px) {
       .header__nav__list {
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex; } }
-    .header__nav__list__item__link {
-      padding: 10px 0;
-      text-decoration: none;
-      color: black;
-      display: block; }
-      .header__nav__list__item__link:hover {
-        background: #1b1b1b;
-        color: white; }
+        display: flex;
+        padding: 15px 0; } }
+    .header__nav__list__item {
+      padding-right: 25px; }
+      .header__nav__list__item__link {
+        padding: 10px 0;
+        text-decoration: none;
+        color: black;
+        display: block; }
+        .header__nav__list__item__link:hover {
+          background: #1b1b1b;
+          color: white; }
 
 .header__hero {
   background: url(../../public/assets/isaac-benhesed-249427-unsplash.jpg) center center;
@@ -200,7 +217,7 @@ body {
 
 .toggle {
   width: 100%;
-  padding-top: 20px;
+  padding: 15px 0;
   font-size: 40px; }
   @media (min-width: 640px) {
     .toggle {
@@ -209,25 +226,34 @@ body {
 .active {
   display: block; }
 
+section {
+  padding: 100px 0; }
+
 section h2 {
   font-size: 40px;
   font-size: 4rem;
-  font-family: "Playfair Display", serif; }
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px; }
 
 .about {
   height: 100vh; }
   .about__para {
     font-size: 18px;
     font-size: 1.8rem;
-    font-family: "PT Serif", serif; }
+    font-family: "PT Serif", serif;
+    line-height: 1.6; }
   .about__image {
     width: 60%;
     max-width: 430px;
     border-radius: 50%;
-    display: block; }
+    display: block;
+    margin: 0 auto; }
 
 .skills {
-  height: 100vh; }
+  height: 50vh;
+  background: #a1a1a1; }
   .skills__list {
     list-style: none;
     margin: 0;
@@ -235,16 +261,49 @@ section h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    .skills__list__item__icon {
-      font-size: 60px;
-      font-size: 6rem;
-      width: 20%; }
-      .skills__list__item__icon--para {
-        font-size: 20px;
-        font-size: 2rem;
-        margin-top: 0; }
+    .skills__list__item {
+      border: 1px solid red;
+      text-align: center; }
+      .skills__list__item__icon {
+        font-size: 60px;
+        font-size: 6rem;
+        margin: 0 auto; }
+        .skills__list__item__icon--para {
+          font-size: 20px;
+          font-size: 2rem;
+          margin-top: 0;
+          text-align: center; }
+
+i {
+  border: 1px solid black;
+  margin: 0 auto; }
+
+.portfolio__image {
+  max-width: 100%; }
+
+.contact .contact-form input, .contact .contact-form textarea {
+  display: block;
+  border: none;
+  width: 80%;
+  border-bottom: 2px solid grey; }
+
+.social-media__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .social-media__list__item {
+    font-size: 40px;
+    font-size: 4rem; }
+    .social-media__list__item__link {
+      color: #2a2a2a;
+      -webkit-transition: 0.2s;
+      transition: 0.2s; }
+      .social-media__list__item__link:hover {
+        color: cornflowerblue; }
