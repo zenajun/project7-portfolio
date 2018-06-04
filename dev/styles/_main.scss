@@ -220,6 +220,7 @@ section h2 {
   &__header3 {
     @include fontFamily($primaryFont);
     @include fontSize(28);
+    text-align: center;
   }
   .contact-form { 
     @include fontFamily($accentFont);
@@ -249,29 +250,32 @@ section h2 {
       }
     }
     @media (min-width: 760px) {
-      width: 60%;
+      width: 50%;
       max-width: 600px;
     }
   }
   .contact-info {
+    text-align: center;
     @media (min-width: 760px) {
-      width: calc(100% - 600px);
+      width: 50%;
+      padding: 0 25px;
     }
     &__link {
       @include fontFamily($accentFont);
       @include fontSize(18);      
       text-decoration: none;
       color: $secondaryColor;
+      transition: 0.2s;
       &:hover {
         color: black;
         border-bottom: 1px solid black;
       }
-
     }
   }
 }
 
 .social-media {
+  margin-top: 100px;
   &__list {
     list-style: none;
     display: flex;

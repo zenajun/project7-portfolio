@@ -442,7 +442,8 @@ section h2 {
   .contact__header3 {
     font-family: "Playfair Display", serif;
     font-size: 28px;
-    font-size: 2.8rem; }
+    font-size: 2.8rem;
+    text-align: center; }
   .contact .contact-form {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
@@ -471,38 +472,45 @@ section h2 {
         background: white; }
     @media (min-width: 760px) {
       .contact .contact-form {
-        width: 60%;
+        width: 50%;
         max-width: 600px; } }
-  @media (min-width: 760px) {
-    .contact .contact-info {
-      width: calc(100% - 600px); } }
-  .contact .contact-info__link {
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    font-size: 1.8rem;
-    text-decoration: none;
-    color: #2a2a2a; }
-    .contact .contact-info__link:hover {
-      color: black;
-      border-bottom: 1px solid black; }
-
-.social-media__list {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .social-media__list__item {
-    font-size: 40px;
-    font-size: 4rem; }
-    .social-media__list__item__link {
+  .contact .contact-info {
+    text-align: center; }
+    @media (min-width: 760px) {
+      .contact .contact-info {
+        width: 50%;
+        padding: 0 25px; } }
+    .contact .contact-info__link {
+      font-family: "Poppins", sans-serif;
+      font-size: 18px;
+      font-size: 1.8rem;
+      text-decoration: none;
       color: #2a2a2a;
       -webkit-transition: 0.2s;
       transition: 0.2s; }
-      .social-media__list__item__link:hover {
-        color: #ED91B6; }
+      .contact .contact-info__link:hover {
+        color: black;
+        border-bottom: 1px solid black; }
+
+.social-media {
+  margin-top: 100px; }
+  .social-media__list {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .social-media__list__item {
+      font-size: 40px;
+      font-size: 4rem; }
+      .social-media__list__item__link {
+        color: #2a2a2a;
+        -webkit-transition: 0.2s;
+        transition: 0.2s; }
+        .social-media__list__item__link:hover {
+          color: #ED91B6; }
 
 .footer {
   background: #2a2a2a;
