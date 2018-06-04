@@ -39,7 +39,8 @@ section h2 {
   &__container {
     @media (min-width: 640px) {
       display: flex;
-      justify-content: space-between
+      justify-content: space-between;
+      align-items: center;
     }
     &__text {
       @media (min-width: 640px) {
@@ -52,15 +53,15 @@ section h2 {
       } 
     }
   }
-  &__image {
-    width: 60%;
-    border-radius: 50%;
-    display: block; 
-    margin: 0 auto 30px;   
-    @media (min-width: 640px) {      
-      max-width: 430px;      
-    }
-  }
+      &__image {
+        width: 60%;
+        border-radius: 50%;
+        display: block; 
+        margin: 0 auto 30px;   
+        @media (min-width: 640px) {      
+          max-width: 430px;      
+        }
+      }
 }
 
 // Skills
@@ -118,57 +119,68 @@ section h2 {
 
 // Portfolio
 .portfolio {
-  &__image {
-    max-width: 100%;
-  }
-  &__header3 {
-    @include fontFamily($accentFont);
-    @include fontSize(30);
-    font-weight: 500;
-  }
   &__container {
-    // ok
-    &__title {
-      @include fontFamily($primaryFont);
-      @include fontSize(28);
-      font-weight: 400;
+    padding: 50px 0;
+    &__image {
+      max-width: 100%;
     }
-    &__description {
+    &__header3 {
       @include fontFamily($accentFont);
-      @include fontSize(18);
-      font-weight: 400;
-      line-height: 1.6;
+      @include fontSize(30);
+      font-weight: 500;
     }
-    &__skills-list {
-      @include fontFamily($accentFont);
-      display: flex;
-      flex-wrap: wrap;
-      list-style: none;
-      padding: 0;
-      &__item {
-        @include fontSize(18);
-        margin-right: 15px;
-        margin-bottom: 10px;
-        // text-transform: uppercase;
-        letter-spacing: 1px;
-        padding: 10px;
-        border: 2px solid $accentColor;
-        transition: 0.2s;
-
-        &:hover {
-          border: 2px solid black;
-          color: white;
-          background: black;
-        }
+    &__content {
+      // ok
+      &__title {
+        @include fontFamily($primaryFont);
+        @include fontSize(28);
+        font-weight: 400;
       }
-      
-    }
-    &__view-work {
-      &__link {
+      &__description {
         @include fontFamily($accentFont);
         @include fontSize(18);
-        text-decoration: none;
-        color: $accentColor;
+        font-weight: 400;
+        line-height: 1.6;
+      }
+      &__skills-list {
+        @include fontFamily($accentFont);
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        &__item {
+          @include fontSize(18);
+          margin-right: 15px;
+          margin-bottom: 10px;
+          // text-transform: uppercase;
+          letter-spacing: 1px;
+          padding: 5px 10px;
+          border: 2px solid $accentColor;
+          transition: 0.2s;
+          &:hover {
+            border: 2px solid black;
+            color: white;
+            background: black;
+          }
+        }
+      }      
+      &__view-work {
+        &__link {
+          @include fontFamily($accentFont);
+          @include fontSize(18);
+          border: 2px solid black;
+          background: black;
+          padding: 5px 10px;
+          text-decoration: none;
+          color: white;
+          margin-right: 15px;
+          transition: 0.2s;
+          &:hover {
+            color: black;
+            background: $accentColor;
+            border: 2px solid $accentColor;
+          }
+        }
       }
     }
   }
