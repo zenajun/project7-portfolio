@@ -36,6 +36,7 @@ section h2 {
 
 // About me
 .about {
+  padding: 50px 50px;
   &__container {
     @media (min-width: 640px) {
       display: flex;
@@ -119,6 +120,7 @@ section h2 {
 
 // Portfolio
 .portfolio {
+  padding: 50px 50px;
   &__container {
     padding: 25px 0 100px;
     @media (min-width: 760px) {
@@ -142,12 +144,7 @@ section h2 {
       @include fontSize(30);
       font-weight: 500;
       text-align: center;
-      @media (min-width: 760px) {
-        text-align: left;
-        &:nth-of-type(odd) {
-          text-align: right;
-        }
-      }
+      margin: 0;
     }
     &__content {
       @media (min-width: 760px) {
@@ -174,7 +171,6 @@ section h2 {
           @include fontSize(18);
           margin-right: 15px;
           margin-bottom: 10px;
-          // text-transform: uppercase;
           letter-spacing: 1px;
           padding: 5px 10px;
           border: 2px solid $accentColor;
@@ -233,7 +229,10 @@ section h2 {
       border-bottom: 2px solid grey;
       padding: 15px 0;
       background: $primaryColor;
-      margin-bottom: 40px;
+      margin: 0 auto 40px;
+      @media (min-width: 1040px) {
+        width: 100%;
+      }
     }
     textarea {
       height: 150px;
@@ -243,7 +242,6 @@ section h2 {
       padding: 20px 40px;
       width: initial;
       font-weight: 500;
-      box-shadow: 3px 2px 10px 0px $secondaryColor;
       &:hover {
         box-shadow: none;
         background: white;

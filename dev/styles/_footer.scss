@@ -1,7 +1,9 @@
 .footer {
-  background: $secondaryColor;
-  padding: 50px 0;
-  color: white;
   @include fontFamily($accentFont);
-  @include fontSize(18);
+  @include fontSize(16);
+  letter-spacing: 1px;
+  background: $secondaryColor;
+  padding: 50px 0 25px;
+  color: white;
+  text-align: center;
 }
