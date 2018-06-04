@@ -168,9 +168,11 @@
 			<div class="wrapper">
 				<h2 class="portfolio__header2">Portfolio <span></span></h2>
 				<!-- React & Firebase -->
+				<h3 class="portfolio__container__header3">React & Firebase Application</h3>
 				<div class="portfolio__container">
-					<h3 class="portfolio__container__header3">React & Firebase Application</h3>
-					<img class="portfolio__container__image" src="../public/assets/smartmockups_jhxjumx5.png" alt="mockup">
+					<div class="portfolio__container__image-container">
+						<img class="portfolio__container__image-container__image" src="../public/assets/smartmockups_jhxjumx5.png" alt="mockup">
+					</div>
 					<div class="portfolio__container__content">
 						<p class="portfolio__container__content__title">Toronto - Unleahsed</p>
 						<p class="portfolio__container__content__description">An application to help you find the off-leash dog parks of Toronto.  Filter by specific park requirements, fenced, small dog area and for commercial dog walkers.</p>
@@ -190,10 +192,13 @@
 						</div>
 					</div>
 				</div>
+
 				<!-- AJAX/API & jQuery -->
-				<div class="portfolio__container">
-					<h3 class="portfolio__container__header3">AJAX/APIs & jQuery Application</h3>
-					<img class="portfolio__container__image" src="../public/assets/smartmockups_jhxjumx5.png" alt="mockup">
+				<h3 class="portfolio__container__header3">AJAX/APIs & jQuery Application</h3>
+					<div class="portfolio__container">
+						<div class="portfolio__container__image-container">
+							<img class="portfolio__container__image-container__image" src="../public/assets/smartmockups_jhxjumx5.png" alt="mockup">
+						</div>
 					<div class="portfolio__container__content">
 						<p class="portfolio__container__content__title">Need a drink?</p>
 						<p class="portfolio__container__content__description">Pick a wine, cider or beer then select your budget!  This app will show you a selection of drinks and direct you to your local LCBO</p>
@@ -213,9 +218,11 @@
 					</div>
 				</div>
 				<!-- Javascript/jQuery -->
-				<div class="portfolio__container">
-					<h3 class="portfolio__container__header3">Javascript/jQuery Application</h3>
-					<img class="portfolio__container__image" src="../public/assets/smartmockups_jhxjumx5.png" alt="mockup">
+				<h3 class="portfolio__container__header3">Javascript/jQuery Application</h3>
+					<div class="portfolio__container">
+						<div class="portfolio__container__image-container">
+							<img class="portfolio__container__image-container__image" src="../public/assets/smartmockups_jhxjumx5.png" alt="mockup">
+						</div>
 					<div class="portfolio__container__content">
 						<div class="portfolio__container__content__text">
 							<p class="portfolio__container__content__title">Colour game</p>
@@ -237,9 +244,11 @@
 				</div>
 
 				<!-- Responsive PSD conversion -->
-				<div class="portfolio__container">
-					<h3 class="portfolio__container__header3">Responsive PSD conversion</h3>
-					<img class="portfolio__container__image" src="../public/assets/smartmockups_jhxjumx5.png" alt="mockup" class="portfolio__container__image">
+				<h3 class="portfolio__container__header3">Responsive PSD conversion</h3>
+					<div class="portfolio__container">
+						<div class="portfolio__container__image-container">
+							<img class="portfolio__container__image-container__image" src="../public/assets/smartmockups_jhxjumx5.png" alt="mockup" class="portfolio__container__image">
+						</div>
 					<div class="portfolio__container__content">
 						<p class="portfolio__container__content__title">maxshop</p>
 						<p class="portfolio__container__content__description">A PSD to responsive site conversion</p>
@@ -260,48 +269,55 @@
 		
 		<!-- Contact -->
 	  <section class="contact" id="contact">
-		 <div class="wrapper">
+		 	<div class="wrapper">
 				<h2>Contact me <span></span></h2>	 
-				<form class="contact-form"action="http://www.focuspocus.io/magic/96cf0e5153fe6c8775d3df3c52662d78" method="POST" enctype="multipart/form-data">
-					<label for="email" class="visuallyhidden">Email</label>
-					<input type="email" name="email" id="email" placeholder="Email Address*" required>
-					<label for="subject" class="visuallyhidden">Subject</label>
-					<input type="text" id="subject" name="subject" placeholder="Subject*" required>
-					<label for="message" class="visuallyhidden"></label>
-					<textarea name="message" id="message" placeholder="Your message" required></textarea>
-					<input type="submit" value="Send Now">
-				</form>
-				<nav class="social-media">
-					<ul class="social-media__list">
-						<li class="social-media__list__item">
-							<a class="social-media__list__item__link" href="https://github.com/zenajun" target="_blank"><i class="fab fa-github"></i></a>
-						</li>
-						<li class="social-media__list__item">
-							<a class="social-media__list__item__link" href="www.linkedin.com/in/zenajun" target="_blank"><i class="fab fa-linkedin"></i></a>
-						</li>
-						<li class="social-media__list__item">
-							<a class="social-media__list__item__link" href="https://twitter.com/zenajun" target="_blank"><i class="fab fa-twitter"></i></a>
-						</li>
-						<li class="social-media__list__item">
-							<a class="social-media__list__item__link" href="https://codepen.io/zenajun/" target="_blank"><i class="fab fa-codepen"></i></a>
-						</li>
-						<li class="social-media__list__item">
-							<a class="social-media__list__item__link" href="https://medium.com/@zena.jun" target="_blank"><i class="fab fa-medium-m"></i></a>
-						</li>
-						<li class="social-media__list__item">
-							<a class="social-media__list__item__link" href="https://www.instagram.com/zenajun/" target="_blank"><i class="fab fa-instagram"></i></a>
-						</li>
-					</ul>
-				</nav>
+				<div class="contact__container">
+					<form class="contact-form"action="http://www.focuspocus.io/magic/96cf0e5153fe6c8775d3df3c52662d78" method="POST" enctype="multipart/form-data">
+						<label for="email" class="visuallyhidden">Email</label>
+						<input type="email" name="email" id="email" placeholder="Email Address*" required>
+						<label for="subject" class="visuallyhidden">Subject</label>
+						<input type="text" id="subject" name="subject" placeholder="Subject*" required>
+						<label for="message" class="visuallyhidden"></label>
+						<textarea name="message" id="message" placeholder="Your message" required></textarea>
+						<input type="submit" value="Send Now">
+					</form>
+					<div class="contact-info">
+						<h3 class="contact__header3">Say Hello:</h3>
+						<a class="contact-info__link" href="mailto:contact@zenajun.com?" target="_top">contact@zenajun.com</a>
+						<nav class="social-media">
+							<h3 class="contact__header3">Connect with me:</h3>
+							<ul class="social-media__list">
+								<li class="social-media__list__item">
+									<a class="social-media__list__item__link" href="https://github.com/zenajun" target="_blank"><i class="fab fa-github"></i></a>
+								</li>
+								<li class="social-media__list__item">
+									<a class="social-media__list__item__link" href="www.linkedin.com/in/zenajun" target="_blank"><i class="fab fa-linkedin"></i></a>
+								</li>
+								<li class="social-media__list__item">
+									<a class="social-media__list__item__link" href="https://twitter.com/zenajun" target="_blank"><i class="fab fa-twitter"></i></a>
+								</li>
+								<li class="social-media__list__item">
+									<a class="social-media__list__item__link" href="https://codepen.io/zenajun/" target="_blank"><i class="fab fa-codepen"></i></a>
+								</li>
+								<li class="social-media__list__item">
+									<a class="social-media__list__item__link" href="https://medium.com/@zena.jun" target="_blank"><i class="fab fa-medium-m"></i></a>
+								</li>
+								<li class="social-media__list__item">
+									<a class="social-media__list__item__link" href="https://www.instagram.com/zenajun/" target="_blank"><i class="fab fa-instagram"></i></a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
 			</div>
   	</section>
 	</main>
-	<footer>
+	<footer class="footer">
 		<div class="wrapper">
 			<p>&copy; Zena 2018</p>
 			<div class="credit">
-				<text x="0" y="115" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Kiran Joseph</text>
-				<text x="0" y="120" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text>
+<p>Photo credits: Isacc Jenks, Kiran Joseph</p>
+<p>Headshot by: Pam Lau</p>
 			</div>
 		</div>
   </footer>
