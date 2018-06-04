@@ -240,16 +240,36 @@ section h2 {
   font-family: "Playfair Display", serif;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  position: relative; }
+  section h2 span::after {
+    content: "";
+    width: 55px;
+    height: 3px;
+    background: #ED91B6;
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
   @media (min-width: 640px) {
     section h2 {
       margin-bottom: 100px; } }
 
 @media (min-width: 640px) {
-  .about {
-    height: 100vh; } }
+  .about__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
 
-.about__para {
+@media (min-width: 640px) {
+  .about__container__text {
+    width: 50%; } }
+
+.about__container__text__para {
   font-size: 18px;
   font-size: 1.8rem;
   font-family: "PT Serif", serif;
@@ -257,13 +277,15 @@ section h2 {
 
 .about__image {
   width: 60%;
-  max-width: 430px;
   border-radius: 50%;
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto 30px; }
+  @media (min-width: 640px) {
+    .about__image {
+      max-width: 430px; } }
 
 .skills {
-  background: #a1a1a1; }
+  background: #FAFAFC; }
   .skills__list {
     list-style: none;
     margin: 0;
@@ -291,7 +313,7 @@ section h2 {
         -webkit-transition: 0.2s;
         transition: 0.2s; }
         .skills__list__item__icon:hover {
-          color: cornflowerblue; }
+          color: #ED91B6; }
         @media (min-width: 640px) {
           .skills__list__item__icon {
             font-size: 70px;
@@ -300,7 +322,7 @@ section h2 {
         width: 50px;
         height: 50px; }
         .skills__list__item svg:hover path {
-          fill: cornflowerblue; }
+          fill: #ED91B6; }
         @media (min-width: 640px) {
           .skills__list__item svg {
             width: 70px;
@@ -318,6 +340,56 @@ section h2 {
 
 .portfolio__image {
   max-width: 100%; }
+
+.portfolio__header3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-size: 3rem;
+  font-weight: 500; }
+
+.portfolio__container__title {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-size: 2.8rem;
+  font-weight: 400; }
+
+.portfolio__container__description {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6; }
+
+.portfolio__container__skills-list {
+  font-family: "Poppins", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  padding: 0; }
+  .portfolio__container__skills-list__item {
+    font-size: 18px;
+    font-size: 1.8rem;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    padding: 10px;
+    border: 2px solid #ED91B6;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+    .portfolio__container__skills-list__item:hover {
+      border: 2px solid black;
+      color: white;
+      background: black; }
+
+.portfolio__container__view-work__link {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #ED91B6; }
 
 .contact .contact-form input, .contact .contact-form textarea {
   display: block;
@@ -341,4 +413,4 @@ section h2 {
       -webkit-transition: 0.2s;
       transition: 0.2s; }
       .social-media__list__item__link:hover {
-        color: cornflowerblue; }
+        color: #ED91B6; }
