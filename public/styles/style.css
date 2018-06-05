@@ -423,7 +423,7 @@ section h2 {
 .portfolio {
   padding: 50px 50px; }
   .portfolio__container {
-    padding: 25px 0 100px; }
+    padding: 25px 0 125px; }
     @media (min-width: 760px) {
       .portfolio__container {
         display: -webkit-box;
@@ -440,75 +440,82 @@ section h2 {
           -webkit-box-direction: reverse;
               -ms-flex-direction: row-reverse;
                   flex-direction: row-reverse;
-          text-align: right; } }
+          text-align: right; }
+        .portfolio__container:nth-of-type(odd) .portfolio__container__content__skills-list {
+          -webkit-box-pack: end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end; }
+          .portfolio__container:nth-of-type(odd) .portfolio__container__content__skills-list__item {
+            margin-right: 0;
+            margin-left: 15px; }
+        .portfolio__container:nth-of-type(odd) .portfolio__container__content__view-work__link {
+          margin-right: 0;
+          margin-left: 15px; } }
+  @media (min-width: 760px) and (min-width: 760px) {
+    .portfolio__container__image-container {
+      width: 45%; } }
     @media (min-width: 760px) {
-      .portfolio__container__image-container {
-        width: 45%; } }
-    .portfolio__container__image-container__image {
-      max-width: 100%; }
-    .portfolio__container__header3 {
-      font-family: "Poppins", sans-serif;
-      font-size: 30px;
-      font-size: 3rem;
-      font-weight: 500;
-      text-align: center;
-      margin: 0; }
+        .portfolio__container__image-container__image {
+          max-width: 100%; }
+        .portfolio__container__header3 {
+          font-family: "Poppins", sans-serif;
+          font-size: 30px;
+          font-size: 3rem;
+          font-weight: 500;
+          text-align: center;
+          margin: 0; } }
+  @media (min-width: 760px) and (min-width: 760px) {
+    .portfolio__container__content {
+      width: 50%; } }
     @media (min-width: 760px) {
-      .portfolio__container__content {
-        width: 50%; } }
-    .portfolio__container__content__title {
-      font-family: "Playfair Display", serif;
-      font-size: 28px;
-      font-size: 2.8rem;
-      font-weight: 400; }
-    .portfolio__container__content__description {
-      font-family: "Poppins", sans-serif;
-      font-size: 18px;
-      font-size: 1.8rem;
-      font-weight: 400;
-      line-height: 1.6; }
-    .portfolio__container__content__skills-list:nth-of-type(odd) {
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end;
-      border: 1px solid red; }
-    .portfolio__container__content__skills-list {
-      font-family: "Poppins", sans-serif;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      list-style: none;
-      padding: 0; }
-      .portfolio__container__content__skills-list__item {
-        font-size: 18px;
-        font-size: 1.8rem;
-        margin-right: 15px;
-        margin-bottom: 10px;
-        letter-spacing: 1px;
-        padding: 5px 10px;
-        border: 2px solid black;
-        -webkit-transition: 0.2s;
-        transition: 0.2s; }
-    .portfolio__container__content__view-work__link {
-      font-family: "Poppins", sans-serif;
-      font-size: 18px;
-      font-size: 1.8rem;
-      padding: 5px 10px;
-      text-decoration: none;
-      margin-right: 15px;
-      -webkit-transition: 0.2s;
-      transition: 0.2s;
-      color: black;
-      border: 2px solid #ED91B6;
-      background: #ED91B6;
-      display: inline-block;
-      margin-bottom: 10px; }
-      .portfolio__container__content__view-work__link:hover {
-        color: white;
-        background: black;
-        border: 2px solid black; }
+        .portfolio__container__content__title {
+          font-family: "Playfair Display", serif;
+          font-size: 28px;
+          font-size: 2.8rem;
+          font-weight: 400; }
+        .portfolio__container__content__description {
+          font-family: "Poppins", sans-serif;
+          font-size: 18px;
+          font-size: 1.8rem;
+          font-weight: 400;
+          line-height: 1.6; }
+        .portfolio__container__content__skills-list {
+          font-family: "Poppins", sans-serif;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          list-style: none;
+          padding: 0; }
+          .portfolio__container__content__skills-list__item {
+            font-size: 18px;
+            font-size: 1.8rem;
+            margin-right: 15px;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            padding: 5px 10px;
+            border: 2px solid black;
+            -webkit-transition: 0.2s;
+            transition: 0.2s; }
+        .portfolio__container__content__view-work__link {
+          font-family: "Poppins", sans-serif;
+          font-size: 18px;
+          font-size: 1.8rem;
+          padding: 5px 10px;
+          text-decoration: none;
+          margin-right: 15px;
+          -webkit-transition: 0.2s;
+          transition: 0.2s;
+          color: black;
+          border: 2px solid #ED91B6;
+          background: #ED91B6;
+          display: inline-block;
+          margin-bottom: 10px; }
+          .portfolio__container__content__view-work__link:hover {
+            color: white;
+            background: black;
+            border: 2px solid black; } }
 
 .contact {
   background: #FAFAFC; }

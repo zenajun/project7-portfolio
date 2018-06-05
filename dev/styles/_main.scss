@@ -123,20 +123,34 @@ section h2 {
 .portfolio {
   padding: 50px 50px;
   &__container {
-    padding: 25px 0 100px;
+    padding: 25px 0 125px;
     @media (min-width: 760px) {
       display: flex;
       align-items: center;   
       justify-content: space-between; 
       &:nth-of-type(odd) {
         flex-direction: row-reverse;
-        text-align: right;
+        text-align: right;      
+      } 
+      &:nth-of-type(odd) &__content {
+        &__skills-list {
+          justify-content: flex-end;
+          &__item {
+            margin-right: 0;
+            margin-left: 15px; 
+          }
+        } 
+        &__view-work {
+          &__link {
+            margin-right: 0;
+            margin-left: 15px;
+          }
+        }      
       }
-    }
-    &__image-container {
-      @media (min-width: 760px) {
-        width: 45%;        
-      }
+      &__image-container {
+        @media (min-width: 760px) {
+          width: 45%;        
+       }
       &__image {
         max-width: 100%;
       }
@@ -150,8 +164,8 @@ section h2 {
     }
     &__content {
       @media (min-width: 760px) {
-        width: 50%;
-      }
+        width: 50%;           
+       }
       &__title {
         @include fontFamily($primaryFont);
         @include fontSize(28);
@@ -163,16 +177,12 @@ section h2 {
         font-weight: 400;
         line-height: 1.6;
       }
-      &__skills-list:nth-of-type(odd) {
-        justify-content: flex-end;
-        border: 1px solid red;
-      }
       &__skills-list {
         @include fontFamily($accentFont);
         display: flex;
         flex-wrap: wrap;
         list-style: none;
-        padding: 0;     
+        padding: 0;   
         &__item {
           @include fontSize(18);
           margin-right: 15px;
@@ -182,7 +192,7 @@ section h2 {
           border: 2px solid black;
           transition: 0.2s;
         }
-      }      
+      } 
       &__view-work {
         &__link {
           @include fontFamily($accentFont);
@@ -205,6 +215,7 @@ section h2 {
       }
     }
   }  
+}
 }
 
 // Contact me
@@ -298,3 +309,4 @@ section h2 {
     }
   }
 }
+
