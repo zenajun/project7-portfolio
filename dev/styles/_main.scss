@@ -147,75 +147,75 @@ section h2 {
           }
         }      
       }
-      &__image-container {
-        @media (min-width: 760px) {
-          width: 45%;        
-        }
-        &__image {
-          max-width: 100%;
-          display: block;
-        }
+    }  
+    &__image-container {
+      @media (min-width: 760px) {
+        width: 45%;        
       }
-      &__header3 {
+      &__image {
+        max-width: 100%;
+        display: block;
+      }
+    }
+    &__header3 {
+      @include fontFamily($accentFont);
+      @include fontSize(30);
+      font-weight: 500;
+      text-align: center;
+      margin: 0;
+    }
+    &__content {
+      @media (min-width: 760px) {
+        width: 50%;           
+      }
+      &__title {
+        @include fontFamily($primaryFont);
+        @include fontSize(28);
+        font-weight: 400;
+      }
+      &__description {
         @include fontFamily($accentFont);
-        @include fontSize(30);
-        font-weight: 500;
-        text-align: center;
-        margin: 0;
+        @include fontSize(18);
+        font-weight: 400;
+        line-height: 1.6;
       }
-      &__content {
-        @media (min-width: 760px) {
-          width: 50%;           
+      &__skills-list {
+        @include fontFamily($accentFont);
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;   
+        &__item {
+          @include fontSize(18);
+          margin-right: 15px;
+          margin-bottom: 10px;
+          letter-spacing: 1px;
+          padding: 5px 10px;
+          border: 2px solid black;
+          transition: 0.2s;
         }
-        &__title {
-          @include fontFamily($primaryFont);
-          @include fontSize(28);
-          font-weight: 400;
-        }
-        &__description {
+      } 
+      &__view-work {
+        &__link {
           @include fontFamily($accentFont);
           @include fontSize(18);
-          font-weight: 400;
-          line-height: 1.6;
-        }
-        &__skills-list {
-          @include fontFamily($accentFont);
-          display: flex;
-          flex-wrap: wrap;
-          list-style: none;
-          padding: 0;   
-          &__item {
-            @include fontSize(18);
-            margin-right: 15px;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-            padding: 5px 10px;
+          padding: 5px 10px;
+          text-decoration: none;
+          margin-right: 15px;
+          transition: 0.2s;
+          color: black;
+          border: 2px solid $accentColor;
+          background: $accentColor;  
+          display: inline-block;
+          margin-bottom: 10px;
+          &:hover {
+            color: white;
+            background: black;
             border: 2px solid black;
-            transition: 0.2s;
-          }
-        } 
-        &__view-work {
-          &__link {
-            @include fontFamily($accentFont);
-            @include fontSize(18);
-            padding: 5px 10px;
-            text-decoration: none;
-            margin-right: 15px;
-            transition: 0.2s;
-            color: black;
-            border: 2px solid $accentColor;
-            background: $accentColor;  
-            display: inline-block;
-            margin-bottom: 10px;
-            &:hover {
-              color: white;
-              background: black;
-              border: 2px solid black;
-            }
           }
         }
       }
-    }  
+    }
   }
 }
 

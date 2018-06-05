@@ -2,14 +2,14 @@ const app = {};
 
 app.hamburger = () => {
   $('#nav-icon3').click(() => {
-    $('ul').toggleClass('active slideInDown');
+    $('ul').toggleClass('active');
     app.header();  
   });
 }
 
 app.closeHamburger = () => {
   $('.header__nav__list__item__link').click(() => {
-    $('ul').toggleClass('active');
+    $('ul').removeClass('active');
     app.header();
   });
 }
@@ -30,11 +30,26 @@ app.hamburgerAnimate = () => {
   });
 }
 
+app.smoothScroll = () => {
+  $("a").on('click', function (e) {
+    if (this.hash !== "") {
+      e.preventDefault();
+      const hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function () {
+        window.location.hash = hash;
+      });
+    } 
+  });
+}
+
 app.init = () => {
   app.hamburger();
   app.closeHamburger();
   app.header();
   app.hamburgerAnimate();
+  app.smoothScroll();
 }
 
 $(function() {
