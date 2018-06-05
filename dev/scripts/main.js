@@ -1,8 +1,8 @@
 const app = {};
 
 app.hamburger = () => {
-  $('.menu').click(() => {
-    $('ul').toggleClass('active');  
+  $('#nav-icon3').click(() => {
+    $('ul').toggleClass('active slideInDown');
     app.header();  
   });
 }
@@ -23,10 +23,18 @@ app.header = () => {
     'height': $heroHeight + 'vh'
   });
 }
+
+app.hamburgerAnimate = () => {
+  $('#nav-icon3').click(function () {
+    $(this).toggleClass('open');
+  });
+}
+
 app.init = () => {
   app.hamburger();
   app.closeHamburger();
   app.header();
+  app.hamburgerAnimate();
 }
 
 $(function() {

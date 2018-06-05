@@ -1,4 +1,15 @@
 .header {
+  .logo {
+    width: 70px;
+    position: absolute;
+    z-index: 10;
+    padding-left: 0px;
+    top: 10px;
+    // display: none;
+    @media (min-width: 1040px) {
+      left: calc(10% - 17px);
+    }
+  }
   &__nav {
     @include fontSize(20);
     @include fontFamily($primaryFont);
@@ -8,26 +19,29 @@
     box-shadow: inset 0 -10px 10px -10px #a1a1a1;
     &__list {
       list-style: none;
-      margin: 0;
-      padding: 20px 0;
+      margin: 0 60px 0 0;
+      padding: 0 0 20px;
       display: none;
       margin-top: -90px;
+      position: relative;
+      z-index: 10;
       @media (min-width: 640px) {
         display: flex;
+        justify-content: flex-end;
         padding: 15px 0;
         margin: 0;
+        text-align: right;
       }      
       &__item {  
-        padding-right: 45px;
-        padding-left: 45px;
+        text-align: right;
+        padding-right: 0;
         @media (min-width: 640px) {
-          padding-left: 0;
         }
         &__link {
           padding: 15px; 
           text-decoration: none;
           color: black;
-          display: block;
+          display: inline-block;
           transition: 0.3s;
           &:hover {
             background: #1b1b1b;
@@ -64,6 +78,7 @@
   position: relative;
   z-index: 10;
   text-align: right;
+  transition: 0.3s;
   @media (min-width: 640px) {
     display: none;    
   }
@@ -71,5 +86,62 @@
 
 .active {
   display: block;
+  transition: 0.5s;
 }
 
+
+#nav-icon3 {
+  width: 50px;
+  height: 45px;
+  position: relative;
+  display: inline-block;
+  margin: 10px 0;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: $secondaryColor;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
+  top: 18px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 36px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}

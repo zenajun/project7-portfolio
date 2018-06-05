@@ -86,10 +86,7 @@ section h2 {
       &__icon{
         @include fontSize(50);
         margin: 0 auto;
-        transition: 0.2s;
-        &:hover {
-          color: $accentColor;
-        } 
+        transition: 0.2s;        
         @media (min-width: 640px) {
           @include fontSize(70); 
         }
@@ -97,17 +94,21 @@ section h2 {
       & svg {
         width: 50px;
         height: 50px;
-        &:hover path {
-           fill: $accentColor;
-        }
         @media (min-width: 640px) {
           width: 70px;
           height: 70px;
         }
+      }
+      & svg:hover + &__wordmark {
+        visibility: visible;
+      }
+      &__icon:hover + &__wordmark {
+        visibility: visible;
       }       
       &__wordmark {
         @include fontSize(16);
         @include fontFamily($accentFont);   
+        visibility: hidden;
         text-align: center;
         font-weight: 500;
         @media (min-width: 640px) {
@@ -129,11 +130,12 @@ section h2 {
       justify-content: space-between; 
       &:nth-of-type(odd) {
         flex-direction: row-reverse;
+        text-align: right;
       }
     }
     &__image-container {
       @media (min-width: 760px) {
-        width: 45%;
+        width: 45%;        
       }
       &__image {
         max-width: 100%;
@@ -161,42 +163,43 @@ section h2 {
         font-weight: 400;
         line-height: 1.6;
       }
+      &__skills-list:nth-of-type(odd) {
+        justify-content: flex-end;
+        border: 1px solid red;
+      }
       &__skills-list {
         @include fontFamily($accentFont);
         display: flex;
         flex-wrap: wrap;
         list-style: none;
-        padding: 0;
+        padding: 0;     
         &__item {
           @include fontSize(18);
           margin-right: 15px;
           margin-bottom: 10px;
           letter-spacing: 1px;
           padding: 5px 10px;
-          border: 2px solid $accentColor;
+          border: 2px solid black;
           transition: 0.2s;
-          &:hover {
-            border: 2px solid black;
-            color: white;
-            background: black;
-          }
         }
       }      
       &__view-work {
         &__link {
           @include fontFamily($accentFont);
           @include fontSize(18);
-          border: 2px solid black;
-          background: black;
           padding: 5px 10px;
           text-decoration: none;
-          color: white;
           margin-right: 15px;
           transition: 0.2s;
+          color: black;
+          border: 2px solid $accentColor;
+          background: $accentColor;  
+          display: inline-block;
+          margin-bottom: 10px;
           &:hover {
-            color: black;
-            background: $accentColor;
-            border: 2px solid $accentColor;
+            color: white;
+            background: black;
+            border: 2px solid black;
           }
         }
       }
@@ -231,20 +234,24 @@ section h2 {
       background: $primaryColor;
       margin: 0 auto 40px;
       @media (min-width: 1040px) {
-        width: 100%;
+        max-width: 600px;
+        margin: 0 0 40px;
       }
     }
     textarea {
       height: 150px;
     }   
     input[type="submit"] {
-      border: 1px solid $secondaryColor;
-      padding: 20px 40px;
+      padding: 10px 40px;
       width: initial;
       font-weight: 500;
+      color: black;
+      border: 2px solid $accentColor;
+      background: $accentColor;
       &:hover {
-        box-shadow: none;
-        background: white;
+        color: white;
+        background: black;
+        border: 2px solid black;        
       }
     }
     @media (min-width: 760px) {
@@ -277,7 +284,8 @@ section h2 {
   &__list {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 0;
     &__item {
       @include fontSize(40);
       &__link {

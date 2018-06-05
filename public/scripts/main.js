@@ -3,8 +3,8 @@
 var app = {};
 
 app.hamburger = function () {
-  $('.menu').click(function () {
-    $('ul').toggleClass('active');
+  $('#nav-icon3').click(function () {
+    $('ul').toggleClass('active slideInDown');
     app.header();
   });
 };
@@ -25,10 +25,18 @@ app.header = function () {
     'height': $heroHeight + 'vh'
   });
 };
+
+app.hamburgerAnimate = function () {
+  $('#nav-icon3').click(function () {
+    $(this).toggleClass('open');
+  });
+};
+
 app.init = function () {
   app.hamburger();
   app.closeHamburger();
   app.header();
+  app.hamburgerAnimate();
 };
 
 $(function () {
