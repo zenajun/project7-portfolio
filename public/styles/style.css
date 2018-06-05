@@ -456,7 +456,8 @@ section h2 {
       width: 45%; } }
     @media (min-width: 760px) {
         .portfolio__container__image-container__image {
-          max-width: 100%; }
+          max-width: 100%;
+          display: block; }
         .portfolio__container__header3 {
           font-family: "Poppins", sans-serif;
           font-size: 30px;
