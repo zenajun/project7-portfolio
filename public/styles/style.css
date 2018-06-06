@@ -161,6 +161,7 @@ body {
 
 .header .logo {
   width: 50px;
+  height: 50px;
   position: absolute;
   z-index: 10;
   padding-left: 0px;
@@ -168,7 +169,8 @@ body {
   @media (min-width: 640px) {
     .header .logo {
       top: 5px;
-      width: 70px; } }
+      width: 70px;
+      height: 70px; } }
   @media (min-width: 1040px) {
     .header .logo {
       left: calc(10% - 17px); } }
