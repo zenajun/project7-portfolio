@@ -363,7 +363,7 @@ section h2 {
 
 @media (min-width: 640px) {
   .about__container__text {
-    width: 50%; } }
+    width: 75%; } }
 
 .about__container__text__para {
   font-size: 18px;
@@ -372,13 +372,14 @@ section h2 {
   line-height: 1.6; }
 
 .about__image {
-  width: 60%;
+  width: 75%;
   border-radius: 50%;
   display: block;
-  margin: 0 0 30px; }
+  margin: 0 auto; }
   @media (min-width: 640px) {
     .about__image {
-      max-width: 430px; } }
+      max-width: 430px;
+      margin: 0; } }
 
 .skills {
   background: #FAFAFC; }

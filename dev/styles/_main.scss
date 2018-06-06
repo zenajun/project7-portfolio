@@ -47,7 +47,7 @@ section h2 {
     }
     &__text {
       @media (min-width: 640px) {
-        width: 50%;
+        width: 75%;
       }
       &__para {
         @include fontSize(18);
@@ -57,12 +57,13 @@ section h2 {
     }
   }
       &__image {
-        width: 60%;
+        width: 75%;
         border-radius: 50%;
         display: block; 
-        margin: 0 0 30px;   
+        margin: 0 auto;  
         @media (min-width: 640px) {      
-          max-width: 430px;      
+          max-width: 430px;    
+          margin: 0;  
         }
       }
 }
