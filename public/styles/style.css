@@ -626,7 +626,8 @@ section h2 {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    padding: 0; }
+    padding: 0 0 25px;
+    margin: 0; }
     .social-media__list__item {
       font-size: 40px;
       font-size: 4rem; }
