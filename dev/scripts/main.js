@@ -3,24 +3,13 @@ const app = {};
 app.hamburger = () => {
   $('#nav-icon3').click(() => {
     $('ul').toggleClass('active');
-    app.header();  
   });
 }
 
 app.closeHamburger = () => {
   $('.header__nav__list__item__link').click(() => {
     $('ul').removeClass('active');
-    app.header();
-  });
-}
-
-app.header = () => {
-  const $navHeight = $('.header__nav').height();
-  const $windowHeight = $(window).height();
-  const $heroHeight = Math.floor(100 - ((100 * $navHeight) / $windowHeight));
-
-  $('.header__hero').css({
-    'height': $heroHeight + 'vh'
+    $('#nav-icon3').removeClass('open');
   });
 }
 
@@ -47,7 +36,6 @@ app.smoothScroll = () => {
 app.init = () => {
   app.hamburger();
   app.closeHamburger();
-  app.header();
   app.hamburgerAnimate();
   app.smoothScroll();
 }

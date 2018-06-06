@@ -7,9 +7,9 @@
 
 // Global section styles
 section {
-  padding: 50px 0;
+  padding: 125px 0 0px;
   @media (min-width: 640px) {
-    padding: 100px 0;
+    padding: 125px 0 0;
   }
 }
 section h2 {
@@ -36,7 +36,9 @@ section h2 {
 
 // About me
 .about {
-  padding: 50px 50px;
+  @media (min-width: 760px) {
+    padding-bottom: 125px;
+  }
   &__container {
     @media (min-width: 640px) {
       display: flex;
@@ -58,7 +60,7 @@ section h2 {
         width: 60%;
         border-radius: 50%;
         display: block; 
-        margin: 0 auto 30px;   
+        margin: 0 0 30px;   
         @media (min-width: 640px) {      
           max-width: 430px;      
         }
@@ -121,13 +123,13 @@ section h2 {
 
 // Portfolio
 .portfolio {
-  padding: 50px 50px;
   &__container {
-    padding: 25px 0 125px;
+    padding: 25px 0 50px;
     @media (min-width: 760px) {
       display: flex;
       align-items: center;   
-      justify-content: space-between; 
+      justify-content: space-between;
+      padding-bottom: 125px; 
       &:nth-of-type(odd) {
         flex-direction: row-reverse;
         text-align: right;      
@@ -222,6 +224,9 @@ section h2 {
 // Contact me
 .contact {
   background: $primaryColor;
+  @media (min-width: 760px) {
+    padding-bottom: 50px;
+  }
   &__container {
     @media (min-width: 760px) {
       display: flex;
@@ -252,6 +257,7 @@ section h2 {
     }
     textarea {
       height: 150px;
+      resize: none;
     }   
     input[type="submit"] {
       padding: 10px 40px;

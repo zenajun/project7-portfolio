@@ -5,7 +5,9 @@
     z-index: 10;
     padding-left: 0px;
     top: 10px;
-    // display: none;
+    @media (min-width: 640px) {
+      top: 5px;
+    }
     @media (min-width: 1040px) {
       left: calc(10% - 17px);
     }
@@ -17,6 +19,8 @@
     background: white;
     overflow: hidden;
     box-shadow: inset 0 -10px 10px -10px #a1a1a1;
+    position: fixed;
+    z-index: 10;
     &__list {
       list-style: none;
       margin: 0 60px 0 0;
@@ -28,27 +32,29 @@
       @media (min-width: 640px) {
         display: flex;
         justify-content: flex-end;
-        padding: 15px 0;
+        padding: 25px 0;
         margin: 0;
         text-align: right;
       }      
       &__item {  
         text-align: right;
-        padding-right: 0;
+        padding: 20px;
         @media (min-width: 640px) {
+          padding: 0;
         }
         &__link {
-          padding: 15px; 
+          padding: 15 0px;
+          margin-left: 20px;  
           text-decoration: none;
           color: black;
           display: inline-block;
           transition: 0.3s;
           &:hover {
-            background: #1b1b1b;
+           background: black;
             color: white;
           }
         }
-      }
+      }          
     }
   }
   &__hero {
@@ -58,7 +64,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    &__header1 {
+    height: 100vh;
+      &__header1 {
       @include fontSize(60);
       @include fontFamily($primaryFont);
       font-weight: 700;
@@ -73,7 +80,7 @@
 
 .toggle {
   width: 100%;
-  padding: 15px 0;
+  padding: 10px 0;
   font-size: 40px;
   position: relative;
   z-index: 10;
@@ -95,7 +102,7 @@
   height: 45px;
   position: relative;
   display: inline-block;
-  margin: 10px 0;
+  margin: 10px;
   transform: rotate(0deg);
   transition: .5s ease-in-out;
   cursor: pointer;
@@ -104,7 +111,7 @@
 #nav-icon3 span {
   display: block;
   position: absolute;
-  height: 5px;
+  height: 4px;
   width: 100%;
   background: $secondaryColor;
   opacity: 1;
