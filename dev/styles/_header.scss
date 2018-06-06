@@ -1,12 +1,13 @@
 .header {
   .logo {
-    width: 70px;
+    width: 50px;
     position: absolute;
     z-index: 10;
     padding-left: 0px;
     top: 10px;
     @media (min-width: 640px) {
       top: 5px;
+      width: 70px;
     }
     @media (min-width: 1040px) {
       left: calc(10% - 17px);
@@ -24,7 +25,7 @@
     &__list {
       list-style: none;
       margin: 0 60px 0 0;
-      padding: 0 0 20px;
+      padding: 25px 0 20px;
       display: none;
       margin-top: -90px;
       position: relative;
@@ -80,13 +81,13 @@
 
 .toggle {
   width: 100%;
-  padding: 10px 0;
-  font-size: 40px;
   position: relative;
   z-index: 10;
   text-align: right;
   transition: 0.3s;
+  padding: 0;
   @media (min-width: 640px) {
+    padding: 10px 0;
     display: none;    
   }
 }
@@ -98,26 +99,33 @@
 
 
 #nav-icon3 {
-  width: 50px;
+  width: 45px;
   height: 45px;
   position: relative;
   display: inline-block;
-  margin: 10px;
   transform: rotate(0deg);
   transition: .5s ease-in-out;
   cursor: pointer;
+  margin: 15px 0 0;
+  @media (min-width: 640px) {
+    margin: 10px;
+  }
 }
 
 #nav-icon3 span {
   display: block;
   position: absolute;
-  height: 4px;
-  width: 100%;
+  height: 3px;
+  width: 85%;
   background: $secondaryColor;
   opacity: 1;
   left: 0;
   transform: rotate(0deg);
   transition: .25s ease-in-out;
+  @media (min-width: 640px) {
+    height: 4px;
+    width: 100%;
+  }
 }
 
 #nav-icon3 span:nth-child(1) {
@@ -126,12 +134,19 @@
 
 #nav-icon3 span:nth-child(2),
 #nav-icon3 span:nth-child(3) {
-  top: 18px;
+  top: 15px;
+  @media (min-width: 640px) {
+    top: 18px;
+  }
 }
 
 #nav-icon3 span:nth-child(4) {
-  top: 36px;
+  top: 30px;
+  @media (min-width: 640px) {
+    top: 36px;
+  }
 }
+
 
 #nav-icon3.open span:nth-child(1) {
   top: 18px;
