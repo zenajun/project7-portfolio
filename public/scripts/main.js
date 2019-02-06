@@ -21,6 +21,12 @@ app.hamburgerAnimate = function () {
   });
 };
 
+app.footerCopy = function () {
+  var date = new Date();
+  var year = date.getFullYear();
+  var span = $('span.year');
+  span.text(year);
+};
 app.smoothScroll = function () {
   $("a").on('click', function (e) {
     if (this.hash !== "") {
@@ -40,6 +46,7 @@ app.init = function () {
   app.closeHamburger();
   app.hamburgerAnimate();
   app.smoothScroll();
+  app.footerCopy();
 };
 
 $(function () {
