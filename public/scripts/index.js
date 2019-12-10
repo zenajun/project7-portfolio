@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 var app = {};
 
@@ -27,6 +27,7 @@ app.footerCopy = function () {
   var span = $('span.year');
   span.text(year);
 };
+
 app.smoothScroll = function () {
   $("a").on('click', function (e) {
     if (this.hash !== "") {

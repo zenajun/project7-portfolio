@@ -4,7 +4,6 @@
 // Portfolio
 // Contact me
 
-
 // Global section styles
 section {
   padding: 125px 0 0px;
@@ -13,26 +12,26 @@ section {
   }
 }
 section h2 {
-    @include fontSize(40);
-    @include fontFamily($primaryFont);
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 50px;
-    position: relative;
-    & span::after {
-      content: "";
-      width: 55px;
-      height: 3px;
-      background: $accentColor;
-      position: absolute;
-      left: 50%;
-      top: 60px;
-      transform: translateX(-50%);
-    }
-    @media (min-width: 640px){
-      margin-bottom: 100px;
-    }
+  @include fontSize(40);
+  @include fontFamily($primaryFont);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  position: relative;
+  & span::after {
+    content: "";
+    width: 55px;
+    height: 3px;
+    background: $accentColor;
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    transform: translateX(-50%);
   }
+  @media (min-width: 640px) {
+    margin-bottom: 100px;
+  }
+}
 
 // About me
 .about {
@@ -53,19 +52,19 @@ section h2 {
         @include fontSize(18);
         @include fontFamily($secondaryFont);
         line-height: 1.6;
-      } 
+      }
     }
   }
-      &__image {
-        width: 75%;
-        border-radius: 50%;
-        display: block; 
-        margin: 0 auto;  
-        @media (min-width: 640px) {      
-          max-width: 430px;    
-          margin: 0;  
-        }
-      }
+  &__image {
+    width: 75%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    @media (min-width: 640px) {
+      max-width: 430px;
+      margin: 0;
+    }
+  }
 }
 
 // Skills
@@ -86,12 +85,12 @@ section h2 {
         width: 20%;
         padding-bottom: 60px;
       }
-      &__icon{
+      &__icon {
         @include fontSize(50);
         margin: 0 auto;
-        transition: 0.2s;        
+        transition: 0.2s;
         @media (min-width: 640px) {
-          @include fontSize(70); 
+          @include fontSize(70);
         }
       }
       & svg {
@@ -107,15 +106,15 @@ section h2 {
       }
       &__icon:hover + &__wordmark {
         visibility: visible;
-      }       
+      }
       &__wordmark {
         @include fontSize(16);
-        @include fontFamily($accentFont);   
+        @include fontFamily($accentFont);
         visibility: hidden;
         text-align: center;
         font-weight: 500;
         @media (min-width: 640px) {
-          @include fontSize(20); 
+          @include fontSize(20);
         }
       }
     }
@@ -128,32 +127,32 @@ section h2 {
     padding: 25px 0 50px;
     @media (min-width: 760px) {
       display: flex;
-      align-items: center;   
+      align-items: center;
       justify-content: space-between;
-      padding-bottom: 125px; 
+      padding-bottom: 125px;
       &:nth-of-type(odd) {
         flex-direction: row-reverse;
-        text-align: right;      
-      } 
+        text-align: right;
+      }
       &:nth-of-type(odd) &__content {
         &__skills-list {
           justify-content: flex-end;
           &__item {
             margin-right: 0;
-            margin-left: 15px; 
+            margin-left: 15px;
           }
-        } 
+        }
         &__view-work {
           &__link {
             margin-right: 0;
             margin-left: 15px;
           }
-        }      
+        }
       }
-    }  
+    }
     &__image-container {
       @media (min-width: 760px) {
-        width: 45%;        
+        width: 45%;
       }
       &__image {
         max-width: 100%;
@@ -169,7 +168,7 @@ section h2 {
     }
     &__content {
       @media (min-width: 760px) {
-        width: 50%;           
+        width: 50%;
       }
       &__title {
         @include fontFamily($primaryFont);
@@ -187,9 +186,9 @@ section h2 {
         display: flex;
         flex-wrap: wrap;
         list-style: none;
-        padding: 0;   
+        padding: 0;
         &__item {
-          @include fontSize(18);
+          @include fontSize(14);
           margin-right: 15px;
           margin-bottom: 10px;
           letter-spacing: 1px;
@@ -197,7 +196,7 @@ section h2 {
           border: 2px solid black;
           transition: 0.2s;
         }
-      } 
+      }
       &__view-work {
         &__link {
           @include fontFamily($accentFont);
@@ -208,7 +207,7 @@ section h2 {
           transition: 0.2s;
           color: black;
           border: 2px solid $accentColor;
-          background: $accentColor;  
+          background: $accentColor;
           display: inline-block;
           margin-bottom: 10px;
           &:hover {
@@ -239,11 +238,12 @@ section h2 {
     @include fontSize(28);
     text-align: center;
   }
-  .contact-form { 
+  .contact-form {
     @include fontFamily($accentFont);
     @include fontSize(18);
     font-weight: 400;
-    input, textarea {
+    input,
+    textarea {
       display: block;
       border: none;
       width: 80%;
@@ -259,7 +259,7 @@ section h2 {
     textarea {
       height: 150px;
       resize: none;
-    }   
+    }
     input[type="submit"] {
       padding: 10px 40px;
       width: initial;
@@ -270,7 +270,7 @@ section h2 {
       &:hover {
         color: white;
         background: black;
-        border: 2px solid black;        
+        border: 2px solid black;
       }
     }
     @media (min-width: 760px) {
@@ -286,7 +286,7 @@ section h2 {
     }
     &__link {
       @include fontFamily($accentFont);
-      @include fontSize(18);      
+      @include fontSize(18);
       text-decoration: none;
       color: $secondaryColor;
       transition: 0.2s;
@@ -318,4 +318,3 @@ section h2 {
     }
   }
 }
-

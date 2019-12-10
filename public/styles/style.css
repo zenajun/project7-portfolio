@@ -526,8 +526,8 @@ section h2 {
     list-style: none;
     padding: 0; }
     .portfolio__container__content__skills-list__item {
-      font-size: 18px;
-      font-size: 1.8rem;
+      font-size: 14px;
+      font-size: 1.4rem;
       margin-right: 15px;
       margin-bottom: 10px;
       letter-spacing: 1px;
@@ -577,7 +577,8 @@ section h2 {
     font-size: 18px;
     font-size: 1.8rem;
     font-weight: 400; }
-    .contact .contact-form input, .contact .contact-form textarea {
+    .contact .contact-form input,
+    .contact .contact-form textarea {
       display: block;
       border: none;
       width: 80%;
@@ -586,7 +587,8 @@ section h2 {
       background: #FAFAFC;
       margin: 0 auto 40px; }
       @media (min-width: 1040px) {
-        .contact .contact-form input, .contact .contact-form textarea {
+        .contact .contact-form input,
+        .contact .contact-form textarea {
           max-width: 600px;
           margin: 0 0 40px; } }
     .contact .contact-form textarea {
